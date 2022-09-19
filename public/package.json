@@ -1,0 +1,14 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "ajinkyaw",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^9.5.0"
+  }
+}
