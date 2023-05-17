@@ -20,8 +20,14 @@ function loadSkills(skills){
 
 			var row = '<div class="row">';
 			for(j=i;j<i+6&&j<skills.length;j++){
-				var skill = '<div class="col m2"><svg viewBox="0 0 128 128"><path d="'+skills[j].icon+'"></path></svg>'+skills[j].name+'</div>';
-				row+=skill;
+				if(skills[j].name == 'GoLang, Go' || skills[j].name == 'MongoDb' || skills[j].name == 'Vue.Js'){
+					var skill = '<div class="col m2"><svg viewBox="0 0 24 24"><path d="'+skills[j].icon+'"></path></svg>'+skills[j].name+'</div>';
+					row+=skill;
+				} else {
+					var skill = '<div class="col m2"><svg viewBox="0 0 128 128"><path d="'+skills[j].icon+'"></path></svg>'+skills[j].name+'</div>';
+					row+=skill;
+				}
+			
 				
 			}
 			row+='</div>';
