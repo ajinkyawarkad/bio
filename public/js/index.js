@@ -91,7 +91,7 @@ function loadWorks(experince){
 
 function getVisit () {
 	return	new Promise((resolve, reject) => {
-		axios.get(`https://ajinkyaw-ac8ca-default-rtdb.firebaseio.com/visits.json`).then((res)=>{
+		axios.get(`https://ajinkya-753a9-default-rtdb.firebaseio.com/visits.json`).then((res)=>{
 			var keys = Object.keys(res.data)
 			resolve(keys.length + 1)
 	});
@@ -104,7 +104,7 @@ function setVisit () {
 			time: new Date(),
 			count: count
 		}
-		axios.post(`https://ajinkyaw-ac8ca-default-rtdb.firebaseio.com/visits.json`,count2).then((res)=>{
+		axios.post(`https://ajinkya-753a9-default-rtdb.firebaseio.com/visits.json`,count2).then((res)=>{
 			console.log('Smart...:)')
 	});
 	})
